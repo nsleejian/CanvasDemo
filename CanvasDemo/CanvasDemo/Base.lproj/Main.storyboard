@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rzK-fa-IHb" customClass="CSAnimationView">
+                                <rect key="frame" x="230" y="230" width="140" height="140"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lgi-Iw-YRg">
+                                        <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAS-vn-3el">
+                                                <rect key="frame" x="20" y="20" width="100" height="100"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="0.0" green="0.79119902849197388" blue="0.94063788652420044" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="3sh-aQ-Qlu"/>
+                                                    <constraint firstAttribute="width" constant="100" id="4ra-Jn-tmB"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="cat.png"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="50"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="catTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S39-iF-mm7"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="YAS-vn-3el" secondAttribute="bottom" constant="20" id="5CA-h5-KbO"/>
+                                            <constraint firstItem="YAS-vn-3el" firstAttribute="top" secondItem="lgi-Iw-YRg" secondAttribute="top" constant="20" id="9O8-Vb-fnb"/>
+                                            <constraint firstItem="YAS-vn-3el" firstAttribute="top" secondItem="lgi-Iw-YRg" secondAttribute="top" constant="20" id="Azv-Sq-1hf"/>
+                                            <constraint firstItem="YAS-vn-3el" firstAttribute="centerY" secondItem="lgi-Iw-YRg" secondAttribute="centerY" id="D4u-YW-N11"/>
+                                            <constraint firstItem="YAS-vn-3el" firstAttribute="leading" secondItem="lgi-Iw-YRg" secondAttribute="leading" constant="20" id="J92-rH-UBE"/>
+                                            <constraint firstItem="YAS-vn-3el" firstAttribute="leading" secondItem="lgi-Iw-YRg" secondAttribute="leading" id="Prf-ON-itv"/>
+                                            <constraint firstItem="YAS-vn-3el" firstAttribute="leading" secondItem="lgi-Iw-YRg" secondAttribute="leading" id="V9Y-Er-yqY"/>
+                                            <constraint firstItem="YAS-vn-3el" firstAttribute="leading" secondItem="lgi-Iw-YRg" secondAttribute="leading" constant="20" id="Va2-8E-HqL"/>
+                                            <constraint firstItem="YAS-vn-3el" firstAttribute="centerY" secondItem="lgi-Iw-YRg" secondAttribute="centerY" id="Yd3-hh-FQe"/>
+                                            <constraint firstAttribute="trailing" secondItem="YAS-vn-3el" secondAttribute="trailing" constant="20" id="Yek-ka-EMm"/>
+                                            <constraint firstItem="YAS-vn-3el" firstAttribute="centerX" secondItem="lgi-Iw-YRg" secondAttribute="centerX" id="bPj-DS-bap"/>
+                                            <constraint firstItem="YAS-vn-3el" firstAttribute="leading" secondItem="lgi-Iw-YRg" secondAttribute="leading" constant="20" id="bkz-cE-hCy"/>
+                                            <constraint firstItem="YAS-vn-3el" firstAttribute="centerX" secondItem="lgi-Iw-YRg" secondAttribute="centerX" id="lP8-YL-7yt"/>
+                                            <constraint firstItem="YAS-vn-3el" firstAttribute="leading" secondItem="lgi-Iw-YRg" secondAttribute="leading" constant="20" id="ooY-6y-ZM3"/>
+                                            <constraint firstItem="YAS-vn-3el" firstAttribute="top" secondItem="lgi-Iw-YRg" secondAttribute="top" constant="20" id="ss2-tN-xaS"/>
+                                            <constraint firstAttribute="bottom" secondItem="YAS-vn-3el" secondAttribute="bottom" constant="20" id="ter-fi-bp7"/>
+                                            <constraint firstItem="YAS-vn-3el" firstAttribute="top" secondItem="lgi-Iw-YRg" secondAttribute="top" constant="20" id="ucP-8R-xBR"/>
+                                            <constraint firstItem="YAS-vn-3el" firstAttribute="top" secondItem="lgi-Iw-YRg" secondAttribute="top" constant="20" id="vwO-Qe-qHI"/>
+                                            <constraint firstAttribute="trailing" secondItem="YAS-vn-3el" secondAttribute="trailing" constant="20" id="xDS-JN-TVw"/>
+                                            <constraint firstItem="YAS-vn-3el" firstAttribute="top" secondItem="lgi-Iw-YRg" secondAttribute="top" constant="20" id="zbB-dh-frh"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="J92-rH-UBE"/>
+                                                <exclude reference="Prf-ON-itv"/>
+                                                <exclude reference="V9Y-Er-yqY"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.74584093630000003" blue="0.59593906269999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="lgi-Iw-YRg" secondAttribute="bottom" id="7CM-wT-fXF"/>
+                                    <constraint firstItem="lgi-Iw-YRg" firstAttribute="centerX" secondItem="rzK-fa-IHb" secondAttribute="centerX" id="Hle-N3-mJG"/>
+                                    <constraint firstItem="lgi-Iw-YRg" firstAttribute="leading" secondItem="rzK-fa-IHb" secondAttribute="leading" id="IdB-Em-jMC"/>
+                                    <constraint firstItem="lgi-Iw-YRg" firstAttribute="top" secondItem="rzK-fa-IHb" secondAttribute="top" id="Oxq-u7-S4x"/>
+                                    <constraint firstItem="lgi-Iw-YRg" firstAttribute="top" secondItem="rzK-fa-IHb" secondAttribute="top" id="V7R-au-PAG"/>
+                                    <constraint firstItem="lgi-Iw-YRg" firstAttribute="leading" secondItem="rzK-fa-IHb" secondAttribute="leading" id="Ze6-Pc-NXD"/>
+                                    <constraint firstItem="lgi-Iw-YRg" firstAttribute="top" secondItem="rzK-fa-IHb" secondAttribute="top" id="aJ0-mR-wtp"/>
+                                    <constraint firstAttribute="bottom" secondItem="lgi-Iw-YRg" secondAttribute="bottom" id="i2s-hP-Bub"/>
+                                    <constraint firstItem="lgi-Iw-YRg" firstAttribute="centerY" secondItem="rzK-fa-IHb" secondAttribute="centerY" id="rf5-tO-DlS"/>
+                                    <constraint firstAttribute="trailing" secondItem="lgi-Iw-YRg" secondAttribute="trailing" id="roJ-1g-KKi"/>
+                                    <constraint firstAttribute="trailing" secondItem="lgi-Iw-YRg" secondAttribute="trailing" id="zOM-Yh-RBs"/>
+                                    <constraint firstItem="lgi-Iw-YRg" firstAttribute="leading" secondItem="rzK-fa-IHb" secondAttribute="leading" id="zaD-JJ-CEH"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="type" value="fadeln"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yX4-Tf-viV">
+                                <rect key="frame" x="254" y="378" width="92" height="34"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="lFe-fu-ruM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yX4-Tf-viV" firstAttribute="top" secondItem="YAS-vn-3el" secondAttribute="bottom" constant="28" id="H67-rH-2Xt"/>
+                            <constraint firstItem="rzK-fa-IHb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LaF-ud-Zt3"/>
+                            <constraint firstItem="yX4-Tf-viV" firstAttribute="centerX" secondItem="rzK-fa-IHb" secondAttribute="centerX" id="W70-dh-Gt6"/>
+                            <constraint firstItem="rzK-fa-IHb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jSI-wE-scS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animationView" destination="rzK-fa-IHb" id="fJU-nE-eqc"/>
+                        <outlet property="catBUtton" destination="YAS-vn-3el" id="UHm-bp-EtB"/>
+                        <outlet property="typeLabel" destination="yX4-Tf-viV" id="CnQ-k6-Wrk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="294"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cat.png" width="400" height="384"/>
+    </resources>
+</document>
